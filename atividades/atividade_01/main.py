@@ -1,15 +1,26 @@
-# O valor do etanol ao usuário
-etanol = float(input("Digite o valor do etanol (4.29): "))
-
-# O valor da gasolina ao usuário
-gasolina = float(input("Digite o valor da gasolina (5.99): "))
-
-# Calcula 70% do valor da gasolina
-limite = gasolina * 0.7
-
-# Compara se o etanol é mais vantajoso
-if etanol < limite:
-    print("Abasteça com ETANOL. Está mais vantajoso.")
-else:
-    print("Abasteça com GASOLINA. Está mais vantajoso.")
+# laço de reptição
+while True:
+    # tratamento de exeção
+    try:
+        # entrada de dados
+        etanol = float(input("Informe o valor do etanol: R$ ").replace(",","."))
+        gasolina = float(input("Informe o valor da gasolina: R$ ").replace(",","."))
+        calculo = (etanol/gasolina)*100
+        result = "gasolina" if calculo > 70 else "etanol"
     
+    
+        print(f"Compensa abastecer com {result}.")
+
+
+        opcao = input("Deseja refazer o cálculo? (s/n)").Lower().strip()
+        match opcao:
+            case "s":
+                continue
+            case "n":
+                break
+            case _:
+                print("Opcao inválida")
+                continue
+    except Exception as e:
+        print(f"Não foi possível executar operação. {e}.")
+    continue
