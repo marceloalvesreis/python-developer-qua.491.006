@@ -49,4 +49,3 @@ while True:
         diagnostico = "obesidade mórbida"
 
     print(f"\n{nome}, seu IMC é {imc_arredondado}. Diagnóstico: {diagnostico}.\n")
-
