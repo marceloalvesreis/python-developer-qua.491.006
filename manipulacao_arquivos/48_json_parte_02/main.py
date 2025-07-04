@@ -39,7 +39,7 @@ try:
         json.dump(pessoas, f, ensure_ascii=False, indent=4)
     with open(f"{arquivo}.json", "r", encoding="utf-8") as f:
         pessoas = json.load(f)
-    
+
     print(f"{'-'*20} LISTA DE PESSOAS {'-'*20}")
     for pessoa in pessoas:
         for chave in pessoa:
