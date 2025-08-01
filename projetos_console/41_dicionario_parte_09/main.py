@@ -1,5 +1,5 @@
 usuarios = [
-    {
+    
         'nome': "Fulano",
         'idade': 18,
         'email': "fulano@gmail.com"
