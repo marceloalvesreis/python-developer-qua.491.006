@@ -24,7 +24,7 @@ def main():
     usuario.endereco = input("Informe seu endereço: ").strip()
 
     limpar()
-    
+
     print("Informe os dados da empresa:\n")
     empresa.razao_social = input("Informe a razão social: ").strip()
     empresa.nome_fantasia = input("Informe o nome da empresa: ").strip()
